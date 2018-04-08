@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Address Book</title>
+
+	<!-- CSS links -->
+	<link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/book_style.css">
+
+	<!-- Javascript links -->
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/address_book.js"></script>
+
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<h1>Address Book Manager</h1>
+			<p>Manage your contacts easily</p>
+		</div>
+	</header>
+
+	<!-- Contact group -->
+	<section id="contact-group">
+		<div class="container"></div>
+	</section>
+
+	<!-- Main CTA button for adding contacts -->
+	<div id="add-manager">
+		<div class="container">
+			<button id="add-contact"><span class="fa fa-plus"></span> Add contact</button>
+		</div>
+	</div>
+
+	<!-- Contact Form modal window -->
+	<section id="modal-contact-form">
+		<header>
+			<p>New Contact</p>
+			<span class="fa fa-2x fa-close"></span>
+		</header>
+		<main>
+			<form>
+				<div class="input-group">
+					<label for="first-name">First Name</label>
+					<input type="text" id="first-name">
+				</div>
+				<div class="input-group">
+					<label for="last-name">Last Name</label>
+					<input type="text" id="last-name">
+				</div>
+				<div class="input-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" placeholder="example@email.com">
+				</div>
+				<div class="input-group">
+					<label for="phone-no">Phone Number</label>
+					<input type="phone" id="phone-no">
+				</div>
+			</form>
+		</main>
+		<footer>
+			<a href="" id="modal-add-button">Add contact</a>
+			<a href="" id="modal-cancel-button">Cancel</a>
+		</footer>
+	</section>
+
+
+	<div id="overlay"></div>
+
+</body>
+</html>

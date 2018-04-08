@@ -1,0 +1,29 @@
+@font-face{
+  src: url('../vendors/OpenSans-Regular.ttf');
+  font-family: 'Open Sans', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: #fafafa;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1;
+}
