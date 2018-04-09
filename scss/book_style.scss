@@ -16,31 +16,23 @@
 
 /* Main CTA button for adding contacts */
 #add-manager{
-  width: 30%;
+  width: 60%;
   margin: 0px auto;
   &:after{
     @include clearfix;
   }
   #add-contact{
-    padding: 10px;
+    @include button-style;
     background: $green;
     color: #fff;
-    border: none;
-    border-radius: 4px;
-    margin-right: 20px;
-    margin-left: 70px;
-    font-size: 17px;
-    float: left;
+    margin-right: 235px;
+    margin-left: 230px;
   }
   #delete-contacts{
-    padding: 10px;
+    @include button-style;
     background: $red;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 17px;
   }
-}
+}//end add-manager
 
 
   /* Modal Contact form */
@@ -128,6 +120,129 @@
 
     }//end footer
   }//end modal contact form
+
+/* Contacts */
+#contact-group{
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+  .contact{
+    position: relative;
+
+    header{
+      &:after{
+        @include clearfix;
+      }
+      input{
+        display: inline-block;
+        float: left;
+        width: 20%;
+        position: relative;
+        top: 15px;
+      }
+      .header-group{
+        width: 80%;
+        position: relative;
+        display: inline-block;
+        background: $contact-grey;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: 2px 2px 3px rgba(189, 189, 189, 0.8);
+        transition: all 0.5s ease;
+        &:after{
+          @include clearfix;
+        }
+        &:hover{
+          box-shadow: 0px 0px 2px rgba(189, 189, 189, 0.8);
+        }
+        p{
+          width: 85%;
+          float: left;
+        }
+        span{
+          width: 15%;
+          position: absolute;
+          right: -25px;
+          top: 15px;
+        }
+      }//end header-group
+    }//end header
+
+    main{
+      width: 80%;
+      margin-left: 20%;
+      border-left: 1px solid #888;
+      border-right: 1px solid #888;
+      position: relative;
+      top: -7px;
+      .input-section{
+        border-bottom: 1px solid #888;
+        &:after{
+          @include clearfix;
+        }
+        p{
+          display: inline-block;
+          padding: 10px 20px;
+          &:after{
+            @include clearfix;
+          }
+          &:first-child{
+            width: 49%;
+            float: left;
+            border-right: 1px solid #888;
+          }
+          &:last-child{
+            width: 51%;
+          }
+        }
+        input{
+          display: none;
+        }
+      }//end input-section
+    }//end main
+
+    footer{
+      width: 80%;
+      margin-left: 20%;
+      position: relative;
+      top: -10px;
+      border-left: 1px solid #888;
+      border-bottom: 1px solid #888;
+      border-right: 1px solid #888;
+      &:after{
+        @include clearfix;
+      }
+      .button-group{
+        &:first-child{
+          @include button-group-general;
+          border-right: 1px solid #888;
+          float: left;
+          width: 49%;
+            #contact-edit-button{
+              @include button-style;
+              background: $green;
+              width: 36%;
+              text-align: center;
+              margin-left: 30%;
+            }
+        }//end first-child
+        &:last-child{
+          @include button-group-general;
+          width: 51%;
+            #contact-delete-button{
+              @include button-style;
+              background: $red;
+              width: 35%;
+              text-align: center;
+              margin-left: 28%
+            }
+        }//end last-child
+      }//end button-group
+    }//end footer
+  }//end contact
+}//end contact-group
 
 #overlay{
   background: #000;

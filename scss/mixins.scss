@@ -3,3 +3,19 @@
   display: block;
   clear: both;
 }
+
+@mixin button-style{
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 10px;
+  display: inline-block;
+}
+
+@mixin button-group-general{
+  padding: 10px 20px;
+  margin: 0px auto;
+  width: 50%;
+  display: inline-block;
+}

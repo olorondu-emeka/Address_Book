@@ -43,7 +43,7 @@ a {
 
 /* Main CTA button for adding contacts */
 #add-manager {
-  width: 30%;
+  width: 60%;
   margin: 0px auto;
 }
 
@@ -54,24 +54,26 @@ a {
 }
 
 #add-manager #add-contact {
-  padding: 10px;
-  background: #00c953;
   color: #fff;
   border: none;
   border-radius: 4px;
-  margin-right: 20px;
-  margin-left: 70px;
   font-size: 17px;
-  float: left;
+  padding: 10px;
+  display: inline-block;
+  background: #00c953;
+  color: #fff;
+  margin-right: 235px;
+  margin-left: 230px;
 }
 
 #add-manager #delete-contacts {
-  padding: 10px;
-  background: tomato;
   color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 17px;
+  padding: 10px;
+  display: inline-block;
+  background: tomato;
 }
 
 /* Modal Contact form */
@@ -172,6 +174,174 @@ a {
 #modal-contact-form footer a:last-of-type {
   background: tomato;
   color: #fff;
+}
+
+/* Contacts */
+#contact-group {
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+}
+
+#contact-group .contact {
+  position: relative;
+}
+
+#contact-group .contact header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-group .contact header input {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  position: relative;
+  top: 15px;
+}
+
+#contact-group .contact header .header-group {
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  background: #e0e0e5;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px rgba(189, 189, 189, 0.8);
+  box-shadow: 2px 2px 3px rgba(189, 189, 189, 0.8);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#contact-group .contact header .header-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-group .contact header .header-group:hover {
+  -webkit-box-shadow: 0px 0px 2px rgba(189, 189, 189, 0.8);
+  box-shadow: 0px 0px 2px rgba(189, 189, 189, 0.8);
+}
+
+#contact-group .contact header .header-group p {
+  width: 85%;
+  float: left;
+}
+
+#contact-group .contact header .header-group span {
+  width: 15%;
+  position: absolute;
+  right: -25px;
+  top: 15px;
+}
+
+#contact-group .contact main {
+  width: 80%;
+  margin-left: 20%;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  position: relative;
+  top: -7px;
+}
+
+#contact-group .contact main .input-section {
+  border-bottom: 1px solid #888;
+}
+
+#contact-group .contact main .input-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-group .contact main .input-section p {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+#contact-group .contact main .input-section p:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-group .contact main .input-section p:first-child {
+  width: 49%;
+  float: left;
+  border-right: 1px solid #888;
+}
+
+#contact-group .contact main .input-section p:last-child {
+  width: 51%;
+}
+
+#contact-group .contact main .input-section input {
+  display: none;
+}
+
+#contact-group .contact footer {
+  width: 80%;
+  margin-left: 20%;
+  position: relative;
+  top: -10px;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+}
+
+#contact-group .contact footer:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contact-group .contact footer .button-group:first-child {
+  padding: 10px 20px;
+  margin: 0px auto;
+  width: 50%;
+  display: inline-block;
+  border-right: 1px solid #888;
+  float: left;
+  width: 49%;
+}
+
+#contact-group .contact footer .button-group:first-child #contact-edit-button {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 10px;
+  display: inline-block;
+  background: #00c953;
+  width: 36%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+#contact-group .contact footer .button-group:last-child {
+  padding: 10px 20px;
+  margin: 0px auto;
+  width: 50%;
+  display: inline-block;
+  width: 51%;
+}
+
+#contact-group .contact footer .button-group:last-child #contact-delete-button {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 10px;
+  display: inline-block;
+  background: tomato;
+  width: 35%;
+  text-align: center;
+  margin-left: 28%;
 }
 
 #overlay {
