@@ -187,6 +187,10 @@ a {
   position: relative;
 }
 
+#contact-group .contact header {
+  overflow-x: hidden;
+}
+
 #contact-group .contact header:after {
   content: "";
   display: block;
@@ -246,11 +250,19 @@ a {
   border-left: 1px solid #888;
   border-right: 1px solid #888;
   position: relative;
-  top: -7px;
+  top: -5px;
+  height: 0px;
+  -webkit-transition: height 2s ease-in;
+  -o-transition: height 2s ease-in;
+  transition: height 2s ease-in;
+  overflow: hidden;
 }
 
 #contact-group .contact main .input-section {
   border-bottom: 1px solid #888;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 #contact-group .contact main .input-section:after {
@@ -282,16 +294,23 @@ a {
 
 #contact-group .contact main .input-section input {
   display: none;
+  padding: 10px;
+  width: 51%;
 }
 
 #contact-group .contact footer {
   width: 80%;
   margin-left: 20%;
   position: relative;
-  top: -10px;
+  top: -7px;
   border-left: 1px solid #888;
   border-bottom: 1px solid #888;
   border-right: 1px solid #888;
+  height: 0px;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+  overflow: hidden;
 }
 
 #contact-group .contact footer:after {
@@ -317,7 +336,21 @@ a {
   font-size: 17px;
   padding: 10px;
   display: inline-block;
-  background: #00c953;
+  background: #ffc105;
+  width: 36%;
+  text-align: center;
+  margin-left: 30%;
+}
+
+#contact-group .contact footer .button-group:first-child .done {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  padding: 10px;
+  display: inline-block;
+  display: none;
+  background: #ffc105;
   width: 36%;
   text-align: center;
   margin-left: 30%;
@@ -353,4 +386,11 @@ a {
   top: 0;
   z-index: 10;
   display: none;
+}
+
+#contact-group main.open, #contact-group footer.open {
+  height: auto;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
 }

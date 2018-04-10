@@ -79,6 +79,7 @@
     main{
       padding: 15px;
       background: #fdfffd;
+
       .input-group{
         margin-bottom: 15px;
         label{
@@ -130,6 +131,7 @@
     position: relative;
 
     header{
+      overflow-x: hidden;
       &:after{
         @include clearfix;
       }
@@ -176,9 +178,14 @@
       border-left: 1px solid #888;
       border-right: 1px solid #888;
       position: relative;
-      top: -7px;
+      top: -5px;
+      height: 0px;
+      transition: height 2s ease-in;
+      overflow: hidden;
+
       .input-section{
         border-bottom: 1px solid #888;
+        transition: all 1s ease;
         &:after{
           @include clearfix;
         }
@@ -199,6 +206,8 @@
         }
         input{
           display: none;
+          padding: 10px;
+          width: 51%;
         }
       }//end input-section
     }//end main
@@ -207,10 +216,13 @@
       width: 80%;
       margin-left: 20%;
       position: relative;
-      top: -10px;
+      top: -7px;
       border-left: 1px solid #888;
       border-bottom: 1px solid #888;
       border-right: 1px solid #888;
+      height: 0px;
+      transition: height 1s ease;
+      overflow: hidden;
       &:after{
         @include clearfix;
       }
@@ -222,7 +234,15 @@
           width: 49%;
             #contact-edit-button{
               @include button-style;
-              background: $green;
+              background: $amber;
+              width: 36%;
+              text-align: center;
+              margin-left: 30%;
+            }
+            .done{
+              @include button-style;
+              display: none;
+              background: $amber;
               width: 36%;
               text-align: center;
               margin-left: 30%;
@@ -253,4 +273,9 @@
   top: 0;
   z-index: 10;
   display: none;
+}
+
+#contact-group main.open, #contact-group footer.open{
+  height: auto;
+  transition: height 1s ease;
 }
