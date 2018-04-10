@@ -15,6 +15,8 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -181,14 +183,20 @@ a {
   width: 70%;
   margin: 20px auto;
   position: relative;
+  -webkit-transition: all 2s ease-in;
+  -o-transition: all 2s ease-in;
+  transition: all 2s ease-in;
 }
 
 #contact-group .contact {
   position: relative;
+  -webkit-transition: all 2s ease-in;
+  -o-transition: all 2s ease-in;
+  transition: all 2s ease-in;
 }
 
 #contact-group .contact header {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #contact-group .contact header:after {
@@ -252,9 +260,9 @@ a {
   position: relative;
   top: -5px;
   height: 0px;
-  -webkit-transition: height 2s ease-in;
-  -o-transition: height 2s ease-in;
-  transition: height 2s ease-in;
+  -webkit-transition: all 2s ease-in;
+  -o-transition: all 2s ease-in;
+  transition: all 2s ease-in;
   overflow: hidden;
 }
 
@@ -294,6 +302,9 @@ a {
 
 #contact-group .contact main .input-section input {
   display: none;
+  font-size: 17px;
+  background: #ddd;
+  border: none;
   padding: 10px;
   width: 51%;
 }
@@ -307,9 +318,9 @@ a {
   border-bottom: 1px solid #888;
   border-right: 1px solid #888;
   height: 0px;
-  -webkit-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
   overflow: hidden;
 }
 
@@ -329,7 +340,7 @@ a {
   width: 49%;
 }
 
-#contact-group .contact footer .button-group:first-child #contact-edit-button {
+#contact-group .contact footer .button-group:first-child .contact-edit-button {
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -364,7 +375,7 @@ a {
   width: 51%;
 }
 
-#contact-group .contact footer .button-group:last-child #contact-delete-button {
+#contact-group .contact footer .button-group:last-child .contact-delete-button {
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -390,7 +401,7 @@ a {
 
 #contact-group main.open, #contact-group footer.open {
   height: auto;
-  -webkit-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }

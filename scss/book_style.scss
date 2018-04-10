@@ -127,11 +127,13 @@
   width: 70%;
   margin: 20px auto;
   position: relative;
+  transition: all 2s ease-in;
   .contact{
     position: relative;
+    transition: all 2s ease-in;
 
     header{
-      overflow-x: hidden;
+      overflow: hidden;
       &:after{
         @include clearfix;
       }
@@ -180,7 +182,7 @@
       position: relative;
       top: -5px;
       height: 0px;
-      transition: height 2s ease-in;
+      transition: all 2s ease-in;
       overflow: hidden;
 
       .input-section{
@@ -206,6 +208,9 @@
         }
         input{
           display: none;
+          font-size: 17px;
+          background: #ddd;
+          border: none;
           padding: 10px;
           width: 51%;
         }
@@ -221,7 +226,7 @@
       border-bottom: 1px solid #888;
       border-right: 1px solid #888;
       height: 0px;
-      transition: height 1s ease;
+      transition: all 1s ease;
       overflow: hidden;
       &:after{
         @include clearfix;
@@ -232,7 +237,7 @@
           border-right: 1px solid #888;
           float: left;
           width: 49%;
-            #contact-edit-button{
+            .contact-edit-button{
               @include button-style;
               background: $amber;
               width: 36%;
@@ -251,7 +256,7 @@
         &:last-child{
           @include button-group-general;
           width: 51%;
-            #contact-delete-button{
+            .contact-delete-button{
               @include button-style;
               background: $red;
               width: 35%;
@@ -277,5 +282,5 @@
 
 #contact-group main.open, #contact-group footer.open{
   height: auto;
-  transition: height 1s ease;
+  transition: all 1s ease;
 }
